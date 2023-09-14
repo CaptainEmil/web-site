@@ -1,3 +1,6 @@
+@import url("./styles/variables/colors.css");
+@import url("./styles/variables/sizes.css");
+
 .menu {
     background-color: var(--bg-secondary-color);
     width: 100%;
@@ -118,6 +121,10 @@
     padding: 5px 10px;
 }
 
+#burger-button-search:active {
+    background-color: var(--header-button-active-bg-color);
+}
+
 li {
     padding: 10px;
     color: var(--header-primary-font-color);
@@ -159,6 +166,8 @@ li {
     color: var(--header-primary-font-color);
     margin-left: auto;
 }
+
+
 
 
 
@@ -238,6 +247,9 @@ li {
     height: var(--burger-menu-button-height);
 }
 
+#button-search:active {
+    background-color: var(--header-button-active-bg-color);
+}
 
 .input-container {
     margin-left: auto;

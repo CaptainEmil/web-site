@@ -6,8 +6,10 @@
     --input-outline-color: #70b2e6;
     --current-page-bg-color:#080808;
     --main-heading-button-bg-color: #337ab7;
+    --main-heading-button-active-bg-color: #286090;
     --primary-font-color: #262626;
     --services-nav-hover-bg:#f5f5f5;
     --main-heading-font-color: #adff2f;
     --main-heading-bg-color: #9acd32;
+    --header-button-active-bg-color: #e6e6e6;
 }

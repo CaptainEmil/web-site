@@ -1,3 +1,6 @@
+@import url("./styles/variables/colors.css");
+@import url("./styles/variables/sizes.css");
+
 .global-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -11,4 +14,8 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+body{
+    min-width: 500PX;
 }

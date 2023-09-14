@@ -1,3 +1,6 @@
+@import url("./styles/variables/colors.css");
+@import url("./styles/variables/sizes.css");
+
 .section-1 {
     background-color: var(--main-heading-bg-color);
     color: var(--main-heading-font-color);
@@ -28,4 +31,9 @@
     padding: 10px 15px;
     background-color: var(--main-heading-button-bg-color);
     color: var(--header-secondary-font-color);
+}
+
+
+.main-heading-button:active {
+    background-color: var(--main-heading-button-active-bg-color);
 }

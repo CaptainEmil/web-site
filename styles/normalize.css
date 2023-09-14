@@ -13,3 +13,8 @@ ul,
 ol {
     list-style: none;
 }
+
+input[type="text"] {
+    border: 0;
+    outline: 0;
+}

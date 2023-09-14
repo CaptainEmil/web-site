@@ -4,7 +4,7 @@
 .section-1 {
     background-color: var(--main-heading-bg-color);
     color: var(--main-heading-font-color);
-    
+    text-align: center;
 }
 
 .section-1-container {
@@ -36,4 +36,11 @@
 
 .main-heading-button:active {
     background-color: var(--main-heading-button-active-bg-color);
+}
+
+
+@media screen and  (max-width: 800px) {
+    .heading {
+        font-size: calc(var(--heading-font-size) / 1.5);
+    }
 }

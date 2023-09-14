@@ -1,0 +1,31 @@
+.section-1 {
+    background-color: var(--main-heading-bg-color);
+    color: var(--main-heading-font-color);
+    
+}
+
+.section-1-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 10px;
+}
+
+.heading {
+    font-size: var(--heading-font-size);
+    font-weight: 100;
+}
+
+.subheading {
+    font-size: 25px;
+}
+
+.main-heading-button {
+    padding: 10px 15px;
+    background-color: var(--main-heading-button-bg-color);
+    color: var(--header-secondary-font-color);
+}

@@ -1,0 +1,14 @@
+.global-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--header-footer-height) 1fr var(--header-footer-height);
+}
+
+
+button {
+    border-radius: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+}

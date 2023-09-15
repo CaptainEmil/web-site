@@ -85,6 +85,7 @@
 
 .burger-menu li {
     padding: var(--header-li-padding);
+    padding-left: calc(var(--header-li-padding) + 20px);
     width: 100%;
 }
 
@@ -109,7 +110,7 @@
     position: absolute;
     width: 100%;
     background-color: var(--bg-secondary-color);
-    margin-left: calc(var(--header-li-padding)*-1);
+    margin-left: calc((var(--header-li-padding) + 20px) *-1);
 }
 
 .burger-services:hover nav

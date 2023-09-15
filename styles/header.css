@@ -1,15 +1,13 @@
 @import url("./styles/variables/colors.css");
 @import url("./styles/variables/sizes.css");
 
-header.menu {
+
+.fixed-container {
+    position: fixed;
     background-color: var(--bg-secondary-color);
     width: 100%;
     grid-row: 1;
     grid-column: 1;
-}
-
-.fixed-container {
-    position: fixed;
 }
 
 .header-container {

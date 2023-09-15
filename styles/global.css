@@ -28,3 +28,15 @@ button:hover {
 body{
     min-width: 500PX;
 }
+
+a {
+    color: var(--link-font-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--link-font-color);
+}

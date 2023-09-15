@@ -1,4 +1,5 @@
 :root {
+    --content-max-width: 1170px;
     --burger-menu-button-container-margin-right: 20px;
     --burger-menu-button-height: 70%;
     --burger-menu-button-width: 45px;
@@ -6,5 +7,8 @@
     --header-li-padding: 10px;
     --header-footer-height: 50px;
     --main-sections-padding: 50px;
-    --heading-font-size: 70px;
+    --section-1-heading-font-size: 70px;
+    --section-2-primary-heading-font-size: 40px;
+    --section-2-secondary-heading-font-size: 25px;
+    --headings-font-weight: 100;
 }

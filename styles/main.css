@@ -2,13 +2,13 @@
 @import url("./styles/variables/sizes.css");
 
 .section-1 {
-    background-color: var(--main-heading-bg-color);
-    color: var(--main-heading-font-color);
+    background-color: var(--section-1-bg-color);
+    color: var(--section-1-font-color);
     text-align: center;
 }
 
 .section-1-container {
-    max-width: 1170px;
+    max-width: var(--content-max-width);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -18,12 +18,11 @@
     gap: 10px;
 }
 
-.heading {
-    font-size: var(--heading-font-size);
-    font-weight: 100;
+.section-1-heading {
+    font-size: var(--section-1-heading-font-size);
 }
 
-.subheading {
+.section-1-subheading {
     font-size: 25px;
 }
 
@@ -38,9 +37,45 @@
     background-color: var(--main-heading-button-active-bg-color);
 }
 
+.section-2-container {
+    margin: 0 auto;
+    max-width: var(--content-max-width);
+    padding-top: 20px;
+}
+
+.section-2-headings {
+    margin: 10px auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.section-2-heading-1,
+.section-2-heading-2 {
+    display: inline;
+}
+
+.section-2-heading-1 {
+    color: var(--section-2-primary-heading-font-color);
+    font-size: var(--section-2-primary-heading-font-size);
+}
+
+.section-2-heading-2 {
+    margin-left: 5px;
+    color: var(--section-2-secondary-heading-font-color);
+    font-size: var(--section-2-secondary-heading-font-size);
+}
+
+
+
+.section-2-subheading {
+    margin: 10px;
+    text-align: center;
+    color: var(--section-2-primary-font-color);
+}
+
 
 @media screen and  (max-width: 800px) {
-    .heading {
-        font-size: calc(var(--heading-font-size) / 1.5);
+    .section-1-heading {
+        font-size: calc(var(--section-1-heading-font-size) / 1.5);
     }
 }

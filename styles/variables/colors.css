@@ -15,8 +15,11 @@
     --section-2-secondary-heading-font-color: #777;
     --section-2-primary-font-color: #959595;
     --section-2-bg-color: #fff;
-    --section-3-font-color: #adff2f;
-    --section-3-bg-color: #9acd32;
+    --section-3-font-color: #000000;
+    --section-3-bg-color: #daa520;
+    --section-3-button-font-color: #333333;
     --header-button-active-bg-color: #e6e6e6;
     --link-font-color: #337ab7;
+    --footer-bg-color: #ffffff;
+    --footer-copyright-font-color: #959595;
 }

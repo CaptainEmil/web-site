@@ -4,5 +4,18 @@
 footer {
     position: relative;
     bottom: 0;
-    background-color: red;
+    background-color: var(--footer-bg-color);
+}
+
+.footer-container {
+    margin: 30px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copyright {
+    color: var(--footer-copyright-font-color);
 }

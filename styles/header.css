@@ -78,7 +78,7 @@
     margin-right: calc(var(--burger-menu-button-container-margin-right)*-1);
 }
 
-.burger-home {
+.current-page {
     background-color: var(--current-page-bg-color);
     color: var(--header-secondary-font-color);
 }
@@ -207,10 +207,6 @@ li {
     padding: 0 10px;
 }
 
-.nav-list #home {
-    background-color: var(--current-page-bg-color);
-    color: var(--header-secondary-font-color);
-}
 
 
 .services-nav {

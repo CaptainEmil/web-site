@@ -1,6 +1,8 @@
 @import url("./styles/variables/colors.css");
 @import url("./styles/variables/sizes.css");
 
+
+
 .section-1 {
     background-color: var(--section-1-bg-color);
     color: var(--section-1-font-color);
@@ -166,7 +168,7 @@
 }
 
 .section-3-button{
-    padding: 5px 10px;
+    padding: 10px;
     color: var(--section-3-button-font-color);
 }
 
@@ -181,6 +183,7 @@
 
     .section-2-cards-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .section-3-cards-container {

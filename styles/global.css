@@ -19,6 +19,8 @@ h6 {
 
 button {
     border-radius: 3px;
+    background-color: var(--button-primary-bg-color);
+    color: var(--button-primary-font-color);
 }
 
 button:hover {
@@ -29,14 +31,15 @@ body{
     min-width: 500PX;
 }
 
-a {
+:is(main, footer) a {
     color: var(--link-font-color);
 }
 
-a:hover {
+:is(main, footer) a:hover {
     text-decoration: underline;
 }
 
-a:visited {
+:is(main, footer) a:visited {
     color: var(--link-font-color);
 }
+

@@ -1,6 +1,9 @@
 @import url("./styles/variables/colors.css");
 @import url("./styles/variables/sizes.css");
 
+header {
+    z-index: 1000;
+}
 
 .fixed-container {
     position: fixed;
@@ -201,12 +204,19 @@ li {
     display: flex;
 }
 
-.nav-list > li{
+.nav-list > li {
     display: inline-block;
     line-height: var(--header-footer-height);
-    padding: 0 10px;
+    padding: 0;
 }
 
+.nav-list > li > a {
+    padding: 10px;
+}
+
+.nav-list > li#services {
+    padding: 0 var(--services-margin-padding);
+}
 
 
 .services-nav {
@@ -216,7 +226,7 @@ li {
     position: absolute;
     border-radius: 2px;
     box-shadow: 0 0 10px grey;
-    margin-left: -10px;
+    margin-left: calc(var(--services-margin-padding) * -1);
 }
 
 #services:hover {

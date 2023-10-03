@@ -1,0 +1,293 @@
+@import url("./styles/variables/colors.css");
+@import url("./styles/variables/sizes.css");
+
+header {
+    z-index: 1000;
+}
+
+.fixed-container {
+    position: fixed;
+    background-color: var(--bg-secondary-color);
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+    height: var(--header-footer-height);
+}
+
+.header-container {
+    height: 100%;
+    background-color: var(--bg-secondary-color);
+    display: flex;
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: var(--burger-menu-button-container-margin-right);
+    justify-content: flex-start;
+    gap: 10px;
+    
+}
+
+.burger-menu-button {
+    height: var(--burger-menu-button-height);
+    width: var(--burger-menu-button-width);
+    background-color: transparent;
+    border: 1px solid var(--bg-primary-color);
+    border-radius: 5px;
+}
+
+
+
+.burger-menu-button:hover{
+    background-color: var(--bg-primary-color);
+}
+
+.burger-menu-button:hover ~ .burger-menu {
+    max-height: var(--burger-menu-max-height);
+    transition: max-height 0.5s ease-in;
+}
+
+.burger-menu:hover,
+[class^=burger-menu-buffer]:hover ~ .burger-menu {
+    max-height: var(--burger-menu-max-height);
+    overflow: visible;
+    transition: max-height 0.5s ease-in, overflow 0.5 ease-in;
+}
+
+.lines {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: 4px;
+}
+
+.line {
+    height: 2px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.burger-menu {
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    background-color: var(--bg-secondary-color);
+    overflow: hidden;
+    margin-right: calc(var(--burger-menu-button-container-margin-right)*-1);
+}
+
+.current-page {
+    background-color: var(--current-page-bg-color);
+    color: var(--header-secondary-font-color);
+}
+
+.burger-menu li {
+    padding: var(--header-li-padding);
+    padding-left: calc(var(--header-li-padding) + 20px);
+    width: 100%;
+}
+
+.burger-menu li:hover,
+.logo-container:hover,
+.burger-services-nav li:hover,
+.nav-list li:hover,
+[class^=burger-menu-buffer]:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.burger-menu li:hover nav {
+    cursor: pointer;
+    color: initial;
+}
+
+.burger-services-nav {
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    background-color: var(--bg-secondary-color);
+    margin-left: calc((var(--header-li-padding) + 20px) *-1);
+}
+
+.burger-services:hover nav
+ {
+    max-height: var(--burger-menu-max-height);
+    transition: max-height 0.25s ease-in;
+}
+
+#burger-button-search{
+    margin: 5px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 5px 10px;
+}
+
+#burger-button-search:active {
+    background-color: var(--header-button-active-bg-color);
+}
+
+li {
+    padding: 10px;
+    color: var(--header-primary-font-color);
+}
+
+.burger-input-container {
+    border: 1px double var(--bg-primary-color);
+    border-right: 0;
+    border-left: 0;
+    margin-bottom: 10px;
+}
+
+#burger-search {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#burger-search:focus {
+    box-shadow: 0 0 8px var(--input-outline-color);
+    outline: 1px solid var(--input-outline-color);
+}
+
+[class^=burger-menu-buffer] {
+    height: calc((100% - var(--burger-menu-button-height))/2);
+    width: var(--burger-menu-button-width);
+}
+
+.burger-menu-buffer-bottom {
+    order:1;
+}
+
+.burger-menu-button-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: var(--burger-menu-button-container-margin-right);
+    color: var(--header-primary-font-color);
+    margin-left: auto;
+}
+
+.logo-container {
+    display: flex;
+    align-self: center;
+    gap: 5px;
+    margin-left: 0;
+    box-sizing: content-box;
+    align-items: center;
+    color: var(--header-primary-font-color);
+    position: relative;
+}
+
+.logo-text {
+    font-size: 20px;
+}
+
+.logo-container:hover .logo-text {
+    color: var(--header-secondary-font-color);
+}
+
+.nav {
+    align-self: center;
+    height: 100%;
+}
+
+.nav-list {
+    height: 100%;
+    display: flex;
+}
+
+.nav-list > li {
+    display: inline-block;
+    line-height: var(--header-footer-height);
+    padding: 0;
+}
+
+.nav-list > li > a {
+    padding: 10px;
+}
+
+.nav-list > li#services {
+    padding: 0 var(--services-margin-padding);
+}
+
+
+.services-nav {
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--header-secondary-font-color);
+    position: absolute;
+    border-radius: 2px;
+    box-shadow: 0 0 10px grey;
+    margin-left: calc(var(--services-margin-padding) * -1);
+}
+
+#services:hover {
+    background-color: var(--current-page-bg-color);
+}
+
+#services:hover nav {
+    max-height: var(--burger-menu-max-height);
+}
+
+#services li {
+    padding: 5px 100px 5px 10px;
+    line-height: initial;
+    color: var(--primary-font-color);
+}
+
+#services li:hover {
+    background-color: var(--services-nav-hover-bg);
+}
+
+#button-search{
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 5px 10px;
+    height: var(--burger-menu-button-height);
+}
+
+#button-search:active {
+    background-color: var(--header-button-active-bg-color);
+}
+
+.input-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: var(--burger-menu-button-container-margin-right);
+}
+
+
+#search {
+    width: 200px;
+    height: var(--burger-menu-button-height);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#search:focus {
+    box-shadow: 0 0 8px var(--input-outline-color);
+    outline: 1px solid var(--input-outline-color);
+}
+
+
+@media screen and  (max-width: 800px) {
+    .burger-menu-button-container {
+        display: flex;
+    }
+    .nav { 
+        display: none;
+    }
+    .input-container {
+        display: none;
+    }
+}

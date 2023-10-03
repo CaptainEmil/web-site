@@ -1,45 +1,35 @@
-@import url("./styles/variables/colors.css");
-@import url("./styles/variables/sizes.css");
-
+@import url("styles/variables/colors.css");
+@import url("styles/variables/sizes.css");
 .global-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: var(--header-footer-height) 1fr var(--header-footer-height);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: var(--header-footer-height) 1fr var(--header-footer-height);
 }
-
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-weight: var(--headings-font-size);
+  font-weight: var(--headings-font-size);
 }
-
 button {
-    border-radius: 3px;
-    background-color: var(--button-primary-bg-color);
-    color: var(--button-primary-font-color);
+  border-radius: 3px;
+  background-color: var(--button-primary-bg-color);
+  color: var(--button-primary-font-color);
 }
-
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
-body{
-    min-width: 500PX;
+body {
+  min-width: 500PX;
 }
-
 :is(main, footer) a {
-    color: var(--link-font-color);
+  color: var(--link-font-color);
 }
-
 :is(main, footer) a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 :is(main, footer) a:visited {
-    color: var(--link-font-color);
+  color: var(--link-font-color);
 }
-
